@@ -14,7 +14,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 120px;
 }
 
@@ -120,4 +121,35 @@ body {
     margin-bottom: 20px;
     color: red;
     visibility: hidden;
+}
+
+@media (max-width: 308px) {
+    .menu h1 i {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu h1 {
+        font-size: 18px;
+    }
+    .menu .menu-buttons {
+        margin-left: 15px;
+    }
+    .menu .menu-buttons .add {
+        font-size: 11px;
+        margin-bottom: 5px;
+        padding: 5px;
+        margin-right: 2px;
+    }
+    .menu .menu-buttons .delete-all {
+        font-size: 11px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 615px) {
+    .note-panel {
+        width: 300px;
+    }
 }
